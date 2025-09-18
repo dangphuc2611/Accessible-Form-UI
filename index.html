@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        :root{
+            --persentage: 65
+        }
+    </style>
+  </head>
 
-<body>
+  <body>
     <div id="left-container">
-        <p>Full Name</p>
-        <input type="text" id="name" placeholder="What should we call you?" aria-label="Full Name">
-        <p>Email</p>
-        <input type="email" id="email" placeholder="" aria-label="Email">
-        <p>Enter Password</p>
-        <input type="password" id="password" placeholder="" aria-label="Password">
-        <p>Confirm Password</p>
-        <input type="password" id="confirm-password" placeholder="" aria-label="Confirm Password">
+      <p>Full Name</p>
+      <input
+        type="text"
+        id="name"
+        placeholder="What should we call you?"
+        aria-label="Full Name"
+      />
+      <p>Email</p>
+      <input type="email" id="email" placeholder="john@doe.com" aria-label="Email" />
+      <p>Enter Password</p>
+      <input
+        type="password"
+        id="password"
+        placeholder="xxxxxxxxx"
+        aria-label="Password"
+      />
+      <p>Confirm Password</p>
+      <input
+        type="password"
+        id="confirm-password"
+        placeholder="xxxxxxxxx"
+        aria-label="Confirm Password"
+      />
+      <div>
+        <button>Update Profile</button>
+      </div>
+      
     </div>
-</body>
-
+    <div id="right-container">
+      <div>
+        <div class="c100 p50 center">
+          <span>50%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>Profile Completeness</h2>
+        <div id="profile-completeness">
+            <p class="complete-items complete">Create Account</p>
+            <p class="complete-items complete">Update Roadmap Progress</p>
+            <p class="complete-items complete">Setup Public Profile</p>
+            <p class="complete-items">Complete your first project</p>
+            <p class="complete-items">Invite your Friends</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
